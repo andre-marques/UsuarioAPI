@@ -60,6 +60,32 @@ $route['usuario']['post'] = 'usuario/index';
 $route['usuario/(:num)']['put'] = 'usuario/index/$1';
 $route['usuario/(:num)']['delete'] = 'usuario/index/$1';
 
+
+$route['default_controller'] = 'login';
+$route['404_override'] = '';
+$route['translate_uri_dashes'] = TRUE;
+
+// Routes for login
+$route['login']['get'] = 'login/index';
+$route['login/(:num)']['get'] = 'login/find/$1';
+$route['login']['post'] = 'login/index';
+$route['login/(:num)']['put'] = 'login/index/$1';
+$route['login/(:num)']['delete'] = 'login/index/$1';
+
+
+$route['default_controller'] = 'alimento';
+$route['404_override'] = '';
+$route['translate_uri_dashes'] = TRUE;
+
+// Routes for alimento
+$route['alimento']['get'] = 'alimento/index';
+$route['alimento/(:num)']['get'] = 'alimento/find/$1';
+$route['alimento']['post'] = 'alimento/index';
+$route['alimento/(:num)']['put'] = 'alimento/index/$1';
+$route['alimento/(:num)']['delete'] = 'alimento/index/$1';
+$route['alimento/qrcode']['get'] = 'alimento/index';
+$route['alimento/qrcode/(:num)']['get'] = 'alimento/qrcode/$1';
+
 /*
 | -------------------------------------------------------------------------
 | Sample REST API Routes
