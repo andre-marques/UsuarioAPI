@@ -280,7 +280,7 @@ switch (ENVIRONMENT)
 
 	define('VIEWPATH', $view_folder);
 
-/*
+/* dev-cancelamento
  * --------------------------------------------------------------------
  * LOAD THE BOOTSTRAP FILE
  * --------------------------------------------------------------------
